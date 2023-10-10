@@ -1,0 +1,168 @@
+/* Default styles for larger screens */
+.top {
+    background-color: black;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 1350px;
+}
+
+.address {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.country-dropdown {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.country-icon {
+    display: inline-block;
+}
+
+#country-flag {
+    width: 30px;
+    height: 20px;
+}
+
+.location {
+    width: 30px;
+    height: 20px;
+}
+
+.selected-country {
+    width: 30px;
+    height: 20px;
+}
+
+.account {
+    color: aliceblue;
+}
+
+.box-one {
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+}
+
+.box-two {
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.return {
+    color: aliceblue;
+}
+
+.cart {
+    color: aliceblue;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blueviolet;
+    width: 1350px;
+}
+
+.space {
+    width: 130px;
+}
+
+.background {
+    background-image: url(https://github.com/Kalvium-Program/amazon-clone-boilerplate/blob/dcd76e3300f0c844c863e8cf3728aec6cabc8952/assets/background%20picture.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.forflex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.divident {
+    width: 100%;
+    height: 500px;
+}
+
+.box {
+    background-color: aliceblue;
+    width: 400px;
+    height: 200px;
+}
+
+.sign {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    background-color: yellow;
+}
+
+.last {
+    display: flex;
+}
+
+/* Media query for screens with a maximum width of 768px (tablets and smaller) */
+@media screen and (max-width: 768px) {
+    .top {
+        height: 100px;
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    /* ... (other styles) ... */
+
+    .box {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+/* Media query for screens with a maximum width of 480px (phones) */
+@media screen and (max-width: 600px) {
+    .top {
+        height: 140px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left:10px;
+        width: 380px;
+    }
+    .row2 {
+        display: flex;
+        flex-direction: column;
+        height:600px;
+        width:100px;
+        align-items: flex-start;
+        margin-left: 300px;
+        margin-top: -180px;
+        /* display: none; */
+    }
+
+    /* ... (other styles) ... */
+
+    .box {
+        width: 250px;
+        height: 120px;
+    }
+    .background{
+        display: none;
+
+        
+    }
+    body{
+        background-color: rgb(101, 126, 235);
+    }
+}
